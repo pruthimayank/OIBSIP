@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="heading">CALCULATOR</h1>
+    <header id="output"></header>
+    <main class="grid">
+        <div>
+            <div style="
+            color: #4BD1FB;
+            border-radius: 0 0 30px 0;" onclick="clearDisplay()">AC</div>
+            <div style="
+            border-radius: 0 30px 30px 0;" onclick="appendNumber('7')">7</div>
+            <div style="
+            border-radius: 0 30px 30px 0;" onclick="appendNumber('4')">4</div>
+            <div style="
+            border-radius: 0 30px 30px 0;" onclick="appendNumber('1')">1</div>
+            <div style="
+            color: #4BD1FB;
+            border-radius: 0 30px;" onclick="appendOperator('%')">%</div>
+        </div>
+        <div>
+            <div style="
+            color: #4BD1FB;
+            border-radius: 0 0 30px 30px;" onclick="deleteDigit()">del</div>
+            <div onclick="appendNumber('8')">8</div>
+            <div onclick="appendNumber('5')">5</div>
+            <div onclick="appendNumber('2')">2</div>
+            <div style="
+            border-radius: 30px 30px 0 0;" onclick="appendNumber('0')">0</div>
+        </div>
+        <div>
+            <div style="
+            color: #4BD1FB;
+            border-radius: 0 0 30px 30px;" onclick="toggleSign()">+/-</div>
+            <div onclick="appendNumber('9')">9</div>
+            <div onclick="appendNumber('6')">6</div>
+            <div onclick="appendNumber('3')">3</div>
+            <div style="
+            border-radius: 30px 30px 0 0;" onclick="addDecimal('.')">.</div>
+        </div>
+        <div style="color: #4BD1FB;">
+            <div style="
+            border-radius: 0px 0 0 30px;" onclick="appendOperator('/')">/</div>
+            <div style="
+            border-radius: 30px 0 0 30px;" onclick="appendOperator('*')">x</div>
+            <div style="
+            border-radius: 30px 0 0 30px;" onclick="appendOperator('-')">-</div>
+            <div style="
+            border-radius: 30px 0 0 30px;" onclick="appendOperator('+')">+</div>
+            <div style="
+            border-radius: 30px 0;" onclick="calculateResult()">=</div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>

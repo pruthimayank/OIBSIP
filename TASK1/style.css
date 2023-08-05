@@ -1,0 +1,46 @@
+* {
+    --1: #33373D;
+    --2: #1D2024;
+    --3: #4BD1FB;
+    --4: #ffffff;
+}
+
+body {
+    color: var(--4);
+    background-color: var(--1);
+}
+
+.heading {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+header {
+    background-color: var(--2);
+    height: 38.8vh;
+    margin-bottom: 1rem;
+    border-radius: 50px 50px 0 0;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    font-size: 2rem;
+    padding: 0 1rem 0.5rem 0;
+}
+
+main {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+}
+
+main>div>div {
+    background-color: var(--2);
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border-radius: 30px;
+}
+
+main>div>div:hover {
+    cursor: pointer;
+}

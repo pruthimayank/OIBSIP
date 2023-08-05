@@ -1,0 +1,132 @@
+* {
+  --1: #101c2e;
+  --2: #9cecfe;
+  --3: #7b7b7b;
+  --4: #ffffff;
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--4);
+  background-color: var(--1);
+}
+header .greeting {
+  color: var(--2);
+  font-size: 5rem;
+  margin: 1rem 0 0 1rem;
+}
+header p {
+  color: var(--3);
+  font-size: 1.2rem;
+  margin: 0 0 0 1.2rem;
+}
+main .add-task {
+  width: 300px;
+  padding: 0.5rem 0;
+  margin: 1.5rem 0 0 1.2rem;
+  background-color: var(--2);
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.task-form-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.task-form-container .task-form {
+  /* box-sizing: border-box; */
+  color: var(--4);
+  background-color: var(--1);
+  padding: 10px 20px 20px 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  height: 250px;
+}
+.task-form-container .task-form .close-btn {
+  color: var(--4);
+  font-size: 20px;
+  cursor: pointer;
+  background: none;
+  border: 1px solid white;
+}
+.task-form-container .form-btn {
+  display: flex;
+  justify-content: space-between;
+}
+.task-form-container .form-btn button {
+  background-color: var(--2);
+  padding: 5px;
+  width: 80px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.tasks h2 {
+  margin-left: 1.2rem;
+  font-size: 3rem;
+}
+.tasks .empty-list-txt {
+  margin-left: 1.5rem;
+  color: var(--3);
+  font-size: 1.2rem;
+}
+.tasks ul {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, minmax(30%, 1fr));
+  list-style: none;
+  padding: 0;
+  margin: 1rem;
+}
+.tasks li {
+  /* height: 100px; */
+  border-radius: 20px;
+  overflow-x: scroll;
+  color: black;
+  background-color: var(--2);
+  padding: 1rem;
+}
+.tasks li::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+.tasks li::-webkit-scrollbar-thumb {
+  background: var(--3);
+  border-radius: 10px;
+}
+.tasks li::-webkit-scrollbar-track {
+  background: transparent;
+}
+.tasks li p {
+  color: var(--3);
+}
+.tasks li button {
+  width: 200px;
+  color: var(--2);
+  background-color: var(--1);
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin-top: 0.6rem;
+}
+@media screen and (max-width: 470px) {
+  .tasks ul {
+    display: block;
+  }
+  .tasks li {
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .tasks ul {
+    grid-template-columns: repeat(2, minmax(40%, 1fr));
+  }
+}

@@ -1,0 +1,27 @@
+*{
+    --1:#ffffff;
+}
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    color: var(--1);
+    background-image: url(img.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container1{
+    margin: 0;
+    padding: 1rem 0 0 1rem ;
+}
+.container2{
+    padding: 0.3rem 0 0 2rem ;
+}
+.container2 > ul{
+    list-style:circle;
+}
+.quote{
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    text-align: center;
+}
