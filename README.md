@@ -1,6 +1,7 @@
 # OIBSIP
 Oasis Infobyte Virtual Internship in which I was to complete any one level either level 1 or 2 or 3. <br>
 I successfully completed level 2 which had 4 tasks.
+Design for the tasks is also available [here](https://www.figma.com/file/hNpHsf6QbHb0S58rZ2FPGs/OIBSIP?type=design&node-id=0%3A1&mode=design&t=FR0k6Vi1bACP8QGN-1)
 
 - ## Technologies Used
   - HTML
